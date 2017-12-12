@@ -1,0 +1,44 @@
+<!doctype html>  
+<html lang="en">  
+<head>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+        body
+        {
+          margin: 0; padding: 0; height: 100%; overflow: hidden;
+          background-color: #EEEEEE;
+          color:white;
+        }
+        .lab{
+          position:absolute;
+          margin:0; padding:0;
+        }
+    </style>
+</head>
+
+<body background="img/1.png">
+	 <img style="left:2475px; top:1365px; width: 1645px" class='lab' src="DSI/director.png" data-value='dsi'>
+	 <img style="left:1390px; top:1835px; width: 1100px" class='lab' src="DSI/privacy.png" data-value='privacy'>
+   <img style="left:1930px; top:570px; width: 1100px" class='lab' src="DSI/assimilation.png" data-value='assimilation'>
+   <img style="left:3290px; top:420px; width: 1100px" class='lab' src="DSI/business.png" data-value='business'>
+   <img style="left:4125px; top:1520px; width: 1100px" class='lab' src="DSI/social.png" data-value='social'>
+   <img style="left:3580px; top:2790px; width: 1100px" class='lab' src="DSI/economy.png" data-value='economy'>
+   <img style="left:2215px; top:2940px; width: 1100px" class='lab' src="DSI/behaviour.png" data-value='behaviour'>
+
+   <img id="highlighter" style="width:0px; z-index:-1;" src="img/lab_highlight.png">
+
+  <script src="socket.io/socket.io.js"></script>
+<script>
+
+  var socket = io({path: '/demos/dsiintro'});
+  socket.on('broad', function(data) {
+    if(data=="ml" || data == "dataman") data = "dsi";  // these two go to the general DSI
+    $(".lab[data-value='"+data+"']").toggleClass('selected').siblings().removeClass('selected');
+
+    var p = $(".selected").position();
+    var w = $(".selected").width();
+    $("#highlighter").css({top: p.top, left: p.left, width:w, position:'absolute'});
+  });
+
+</script>
+</html>  

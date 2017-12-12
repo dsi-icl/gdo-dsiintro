@@ -1,0 +1,15 @@
+{
+  "name": "dsiintro",
+  "version": "1.0.0",
+  "description": "Information about the Data Science Institute, Imperial College London",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Miguel Molina-Solana <mmolinas@ic.ac.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "socket.io": "^2.0.4"
+  }
+}

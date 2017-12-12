@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">  
+<head>
+	<title>DSIintro Control</title>
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<style type="text/css">
+		body
+		{
+			margin: 0; padding: 0; height: 100%; overflow: hidden;
+			background-color: #111111;
+			color:white;
+		}
+		.lab{
+			position:absolute;
+			margin:0; padding:0;
+			top:50%; left:50%;
+			width:16%;
+			cursor: pointer;
+		}
+		.section{
+			position:absolute;
+			margin:0; padding:0;
+			top:50%; left:50%;
+			width:12.5%;
+			height:15%;
+			cursor: pointer;
+			border: solid 0px transparent;
+		}
+		.centered {
+			position: fixed;
+			margin:0; padding:0;
+			top: 50%; left: 50%; 
+			width:25%;
+			cursor: pointer;
+		}
+		footer {
+			position: fixed;
+			bottom: 10px;
+			left: 10px
+		}
+		.selected{
+			border: solid 30px transparent;
+		}
+		button{
+			cursor:pointer;
+			font-size:30px; color:white;
+			padding:25px 20px;
+			background-color: #42b3f4;
+			border:1 px solid #07a3fc;
+		}
+	</style>
+		<script src="socket.io/socket.io.js"></script>
+</head>
+
+<body>
+	<div>
+		<!-- positions are hard-coded -->
+		<img style="transform: translate(-50%, -50%);" class='centered btn' src="DSI/director.png" data-value="dsi" />
+		<img style="transform: translate(-128%, -138%);" class='lab btn' src="DSI/assimilation.png" data-value="assimilation" />
+		<img style="transform: translate(-1%, -152%);" class='lab btn' src="DSI/business.png" data-value="business" />
+		<img style="transform: translate(78%, -63%);" class='lab btn' src="DSI/social.png" data-value="social" />
+		<img style="transform: translate(29%, 39%);" class='lab btn' src="DSI/economy.png" data-value="economy" />
+		<img style="transform: translate(-98%, 53%);" class='lab btn' src="DSI/behaviour.png" data-value="behaviour" />
+		<img style="transform: translate(-177%, -36%);" class='lab btn' src="DSI/privacy.png" data-value="privacy" />
+		<span style="transform: translate(-100%, -25%);" class='section btn' data-value="dataman"></span>
+		<span style="transform: translate(0%, -25%);" class='section btn' data-value="ml"/></span>
+	</div>
+
+	<div style="position:absolute; top:10px; left:10px;">
+		<button id="show_mission"> mission </button>
+		<button id="show_faculties"> faculties </button>
+	</div>
+
+	<footer>
+		<img src="img/logo.svg" width="200px" /> 
+	</footer>
+	<script src="control.js"></script>
+
+</body>
+</html>  
