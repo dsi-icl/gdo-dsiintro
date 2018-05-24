@@ -1,4 +1,7 @@
 # DSIintro
+
+[![Build Status](https://travis-ci.com/dsi-icl/gdo-dsivisrepo.svg?token=YUxqhPG5YE8VqxbwGkhL&branch=master)](https://travis-ci.com/dsi-icl/gdo-dsivisrepo)
+
 **DSIintro** is a visualisation with information about the Data Science Institute at Imperial College and its labs. 
 
 While its contents can be viewed in any browser, it is optimized for its accurate display on the screens of the Data Observatory at the Institute. 
