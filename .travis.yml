@@ -1,0 +1,15 @@
+language: node_js
+node_js: "10"
+
+before_install:
+  - cd .travis_resources
+
+install:
+  - npm install
+
+script:
+  - node test.js
+
+after_success:
+  - cd ..
+  - rm -rf .travis_resources
