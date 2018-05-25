@@ -8,11 +8,11 @@ if (!process.env.TOKEN || !process.env.REPO_SLUG) {
 var auth = 'token ' + process.env.TOKEN;
 
 var createBuild = function(callback) {
-  var requestPath = '/repo/' + process.env.REPO_SLUG  + '/request/' + id;
+  var requestPath = '/repo/' + process.env.REPO_SLUG  + '/requests';
   var options = {
     host: 'api.travis-ci.com',
     port: 443,
-    path: '/repo/3717688/requests',
+    path: requestPath,
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ var createBuild = function(callback) {
     });
   });
   req.on('error', function(e) {
-    console.log('problem with request: ' + e.message);
+    console.error('problem with request: ' + e.message);
     process.exit(1);
   });
   req.write('{"request":{"branch":"master"}}');
@@ -81,7 +81,7 @@ var testBuildSuccess = function(id)
       }
     });
   }).on('error', function(e) {
-    console.log('problem with request: ' + e.message);
+    console.error('problem with request: ' + e.message);
     process.exit(1);
   });
 }
