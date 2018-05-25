@@ -1,6 +1,6 @@
 const https = require('https');
 
-if (!process.env.TOKEN || process.env.REPO_SLUG) {
+if (!process.env.TOKEN || !process.env.REPO_SLUG) {
   console.log('no token/repo_slug provided');
   process.exit(1);
 }
