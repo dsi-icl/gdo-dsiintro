@@ -6,8 +6,10 @@
 
 While its contents can be viewed in any browser, it is optimized for its accurate display on the screens of the Data Observatory at the Institute. 
 
-![DSIintro at Imperial's Data Observatory](https://github.com/miguems/dsiintro/raw/master/src/common/images/photo.jpg "DSIintro at Imperial's Data Observatory")
-
+<p float="left">
+<img src="https://github.com/dsi-icl/gdo-dsiintro/raw/master/static/img/snapshot1.jpg" alt="DSIintro at Imperial's Data Observatory" width="400px"/>
+<img src="https://github.com/dsi-icl/gdo-dsiintro/raw/master/static/img/snapshot2.jpg" alt="DSIintro at Imperial's Data Observatory" width="400px"/>
+</p>
 
 
 ## Installation
@@ -17,7 +19,7 @@ This template requires [Node.js](https://nodejs.org/) v4+ to run.
 Install the dependencies, and start the server.
 
 ```sh
-$ git clone git@github.com:miguems/dsiintro.git
+$ git clone git@github.com:dsi-icl/dsiintro.git
 $ cd dsiintro
 $ npm install
 $ node app.js
