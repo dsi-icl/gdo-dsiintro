@@ -1,12 +1,10 @@
-FROM node:carbon
-WORKDIR /usr/src/app
+FROM node:10
+WORKDIR /app
 
-COPY package*.json ./
-
+COPY package.json .
+RUN npm install pm2@latest -g
 RUN npm install
 
-# Bundle app source
 COPY . .
 
-EXPOSE 4200
-CMD [ "node", "app.js" ]
+ENTRYPOINT PORT=5000 pm2-runtime app.js -n "dsiintro" -f
