@@ -12,4 +12,11 @@ script:
 
 after_success:
   - cd ..
-  - rm -rf .travis_resources
+  - docker build -t datascienceinstitute/gdodsiintro .
+
+deploy:
+  provider: script
+  script: bash .travis_resources/docker_push.sh
+  on:
+    branch: master
+
