@@ -7,8 +7,10 @@
 
 While its contents can be viewed in any browser, it is optimized for its accurate display on the screens of the Data Observatory at the Institute. 
 
-![DSIintro at Imperial's Data Observatory](https://github.com/miguems/dsiintro/raw/master/src/common/images/photo.jpg "DSIintro at Imperial's Data Observatory")
-
+<p float="left">
+<img src="https://github.com/dsi-icl/gdo-dsiintro/raw/master/static/img/snapshot1.jpg" alt="DSIintro at Imperial's Data Observatory" width="400px"/>
+<img src="https://github.com/dsi-icl/gdo-dsiintro/raw/master/static/img/snapshot2.jpg" alt="DSIintro at Imperial's Data Observatory" width="400px"/>
+</p>
 
 ## Installation
 
