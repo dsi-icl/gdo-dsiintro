@@ -1,6 +1,6 @@
 
 	/** Connect to socket.io */	
-	var socket = io();
+	var socket = io({path: '/demos/dsiintro/socket.io'});
 	socket.on('connect', function(data) {
 		socket.emit('join', '[Screen ' + screen + ']: connected');
 	});
