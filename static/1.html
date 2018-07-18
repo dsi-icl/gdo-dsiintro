@@ -30,7 +30,7 @@
   <script src="socket.io/socket.io.js"></script>
 <script>
 
-  var socket = io({path: '/demos/dsiintro'});
+  var socket = io({path: '/demos/dsiintro/socket.io'});
   socket.on('broad', function(data) {
     if(data=="ml" || data == "dataman") data = "dsi";  // these two go to the general DSI
     $(".lab[data-value='"+data+"']").toggleClass('selected').siblings().removeClass('selected');

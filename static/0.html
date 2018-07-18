@@ -9,7 +9,7 @@
 	<img style="position:absolute;left:250px; top:200px; width: 5600px; display:none" class='lab' src="DSI/mission.png" data-value='mission' id="img_mission">
 
         <script>
-        	var socket = io({path: '/demos/dsiintro'});
+            var socket = io({path: '/demos/dsiintro/socket.io'});
             var img1 = document.getElementById('img_faculties');
             var img2 = document.getElementById('img_mission');
            	socket.on('broad', function(data) {
