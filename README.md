@@ -1,7 +1,7 @@
 # DSIintro
 
 [![Build Status](https://travis-ci.com/dsi-icl/gdo-dsiintro.svg?branch=master)](https://travis-ci.com/dsi-icl/gdo-dsiintro)
-[![Docker](https://img.shields.io/docker/pulls/datascienceinstitute/gdodisintro.svg)](https://hub.docker.com/r/datascienceinstitute/gdodsiintro)
+[![Docker](https://img.shields.io/docker/pulls/datascienceinstitute/gdodsiintro.svg)](https://hub.docker.com/r/datascienceinstitute/gdodsiintro)
 
 **DSIintro** is a visualisation with information about the Data Science Institute at Imperial College and its labs. 
 
